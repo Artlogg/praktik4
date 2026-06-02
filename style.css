@@ -52,3 +52,52 @@ body {
   padding: 10px 10px 10px 30px;
   list-style-image: url("img/marker.png");
 }
+.auth-form {
+  width: 320px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(120, 120, 120);
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.auth-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.auth-form input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 7px;
+}
+
+.auth-form button {
+  margin-top: 15px;
+  padding: 7px 14px;
+}
+
+.error-message {
+  color: rgb(160, 0, 0);
+  font-weight: 700;
+}
+
+.success-message {
+  color: rgb(0, 110, 0);
+  font-weight: 700;
+}
+
+.auth-hint,
+.dashboard-box {
+  width: 420px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(120, 120, 120);
+  padding: 12px;
+  margin-top: 15px;
+}
+
+.logout-link {
+  color: rgb(160, 0, 0);
+  font-weight: 700;
+}
