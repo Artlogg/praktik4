@@ -7,6 +7,19 @@ const totalEl = document.querySelector("#total");
 const payBtn = document.querySelector("#payBtn");
 const clearBtn = document.querySelector("#clearBtn");
 const filter = document.querySelector("#categoryFilter");
+const CART_STORAGE_KEY = "cart";
+
+const saveCart = () => {
+  localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+};
+
+const loadCart = () => {
+  const savedCart = localStorage.getItem(CART_STORAGE_KEY);
+
+  if (savedCart) {
+    cart = JSON.parse(savedCart);
+  }
+};
 
 const calculateTotal = () => {
   let sum = 0;
@@ -36,6 +49,7 @@ const renderCart = () => {
 
 const removeFromCart = (index) => {
   cart.splice(index, 1);
+  saveCart();
   renderCart();
 };
 
@@ -46,6 +60,7 @@ const addToCart = (productEl) => {
   const category = productEl.dataset.category;
 
   cart.push({ title, price, category });
+  saveCart();
   renderCart();
 };
 
@@ -79,13 +94,18 @@ payBtn.addEventListener("click", () => {
 
   alert("Покупка прошла успешно!");
   cart = [];
+  saveCart();
   renderCart();
 });
 
 
 clearBtn.addEventListener("click", () => {
   cart = [];
+  saveCart();
   renderCart();
 });
 
 filter.addEventListener("change", applyFilter);
+
+loadCart();
+renderCart();
