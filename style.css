@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(173, 211, 221);
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.menu-link {
+  color: rgb(0, 102, 204);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+.section-title {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  background-color: rgb(220, 220, 220);
+  padding: 5px;
+}
+
+.short-desc {
+  color: rgb(120, 60, 60);
+  font-size: 14px;
+  font-style: italic;
+  line-height: 16px;
+}
+
+.full-desc {
+  color: rgb(40, 40, 40);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.features {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(245, 245, 245);
+  padding: 10px 10px 10px 30px;
+  list-style-image: url("img/marker.png");
+}

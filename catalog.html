@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог - Мой сайт книг</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <ul class="menu">
+  <li><a class="menu-link" href="index.html">Главная</a></li>
+  <li><a class="menu-link" href="catalog.html">Каталог</a></li>
+  </ul>
+  <hr>
+
+  <h1>Каталог</h1>
+
+
+ <hr>
+  <label for="categoryFilter">Категория:</label>
+  <select id="categoryFilter">
+    <option value="all">Все</option>
+    <option value="fantasy">Фэнтези</option>
+    <option value="classic">Классика</option>
+  </select>
+  <hr>
+
+
+<div class="product" data-title="Гарри Поттер" data-price="500" data-category="fantasy">
+    <img src="img/book1_small.jpg" alt="Книга 1" width="150">
+    <p><a href="item1.html">Книга «Гарри Поттер»</a></p>
+    <button class="add-to-cart">Добавить в корзину</button>
+  </div>
+
+  <div class="product" data-title="Маленький принц" data-price="300" data-category="classic">
+    <img src="img/book2_small.jpg" alt="Книга 2" width="150">
+    <p><a href="item2.html">Книга «Маленький принц»</a></p>
+    <button class="add-to-cart">Добавить в корзину</button>
+  </div>
+
+  <hr>
+  <h2>Корзина</h2>
+
+  <ul id="cartList"></ul>
+  <p id="total">Итого: 0</p>
+
+  <button id="payBtn">Оплатить</button>
+  <button id="clearBtn">Очистить корзину</button>
+
+  <hr>
+
+
+  <p>&copy; Все права защищены</p>
+  <script src="script.js"></script>
+</body>
+</html>
