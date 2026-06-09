@@ -1,0 +1,5 @@
+node_modules/
+react-profile-card/node_modules/
+react-profile-card/dist/
+.DS_Store
+Thumbs.db

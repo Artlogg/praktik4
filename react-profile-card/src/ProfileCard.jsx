@@ -12,7 +12,7 @@ function ProfileCard({ student }) {
   };
 
   return (
-    <div className="profile-card">
+    <section className="profile-card">
       <h1>Моя визитка</h1>
 
       <div className="avatar-box">
@@ -46,7 +46,7 @@ function ProfileCard({ student }) {
       </ul>
 
       <p>{student.description}</p>
-    </div>
+    </section>
   );
 }
 

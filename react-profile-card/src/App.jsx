@@ -1,3 +1,4 @@
+import ApiUsers from "./ApiUsers.jsx";
 import ProfileCard from "./ProfileCard.jsx";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <main className="app">
       <ProfileCard student={student} />
+      <ApiUsers />
     </main>
   );
 }
